@@ -1,28 +1,19 @@
-== README
+# websocket
+Build rails web socket with Private Pub &amp; deploying on Heroku
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+In config/private_pub.yml in your chat app, your production configuration to should specify the server of your new bare-bones, Faye app:
 
-Things you may want to cover:
+`production:`
 
-* Ruby version
+  `server: "https://.herokuapp.com/faye"`
+  
+  `secret_token: “XXXXXXXX`
+  
+  `signature_expiration: 3600 # one hour`
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+And that’s it! You’re ready to deploy your chat app by creating a Heroku app for it and pushing to Heroku master. No further steps required to start chatting!
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+You can see more at : 
+- http://www.thegreatcodeadventure.com/hello-or-building-a-chatting-app-with-rails/
+- http://www.thegreatcodeadventure.com/deploying-private-pub-on-heroku/
