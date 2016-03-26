@@ -1,4 +1,3 @@
-# websocket
 Build rails web socket with Private Pub &amp; deploying on Heroku
 
 In config/private_pub.yml in your chat app, your production configuration to should specify the server of your new bare-bones, Faye app:
